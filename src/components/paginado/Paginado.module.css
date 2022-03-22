@@ -1,0 +1,25 @@
+.number {
+    margin-left: 10px;
+    align-items: center;
+    display: inline;
+    padding: 8px;
+    }
+
+.btn {
+    background-color: yellow;
+    border-radius: 20px;
+    border-color: black;
+    transition-duration: 0.4s;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.btn:focus
+{outline:none }
+
+.btn:hover {
+    cursor:pointer;
+    background-color: red ;
+    color:yellow
+}

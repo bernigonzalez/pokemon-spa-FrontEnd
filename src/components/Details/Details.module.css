@@ -1,0 +1,51 @@
+.title{
+    font-family: monospace;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+
+.image{
+    background-color: red;
+    background-size: 5px 5px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.card{
+    position: relative;
+    height:  fit-content;
+    font-family: monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: yellow;
+    border: 1px solid black
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.types{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    ;
+}
+
+.loading{
+    color: red;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+.search {
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    background-color: yellow;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: inline;
+    outline: none;
+}
+
+.btn{ 
+    font-family: monospace;
+    margin-right: 10px;
+    margin: 2px;
+    margin-bottom: 10px;
+    width: 65px;
+    height: 37px;
+    background: yellow;
+    border-radius: 5px;
+    outline: none;
+    transition-duration: 0.4s
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: yellow;
+    background: red;
+
+}
