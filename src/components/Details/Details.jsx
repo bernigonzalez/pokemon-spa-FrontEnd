@@ -16,11 +16,7 @@ export default function Detail(props){
         dispatch(getDetail(id))
     },[dispatch, id])
 
-    // if ((pokemon[0].createdInDb) || !pokemon[0].types[1].name) {
-    //     pokemon[0].types.push({
-    //         name: " "
-    //     })
-    // }
+    
 
     if(pokemon.name) {
         return (
@@ -33,7 +29,7 @@ export default function Detail(props){
                 <div>
                     <img className={styles.image} src={pokemon.image} alt={pokemon.name} />
                 </div>
-                <div>#{pokemon[0].id}</div>
+                <div>#{pokemon.id}</div>
                  <div>
                     <div className={styles.types}>Type 1: {(!pokemon.createdInDb)  ? pokemon.types[0] : pokemon.types[0].name}</div>
                     <div className={styles.types}>Type 2: {(!pokemon.createdInDb)  ? pokemon.types[1] : ((pokemon.types[1] ? pokemon.types[1].name : " "))}</div> 
