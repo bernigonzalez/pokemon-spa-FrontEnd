@@ -22,7 +22,7 @@ export default function Detail(props){
     //     })
     // }
 
-    if(pokemon[0]) {
+    if(pokemon) {
         return (
             <div >
                 <NavBar />
@@ -31,7 +31,7 @@ export default function Detail(props){
                 <div className={styles.card}>
                 <div className={styles.title}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</div>
                 <div>
-                    <img className={styles.image} src={pokemon[0].image} alt={pokemon[0].name} />
+                    <img className={styles.image} src={pokemon.image} alt={pokemon.name} />
                 </div>
                 <div>#{pokemon[0].id}</div>
                  <div>
