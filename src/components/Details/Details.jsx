@@ -22,7 +22,7 @@ export default function Detail(props){
     //     })
     // }
 
-    if(pokemon) {
+    if(pokemon.name) {
         return (
             <div >
                 <NavBar />
