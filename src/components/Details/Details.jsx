@@ -11,12 +11,11 @@ export default function Detail(props){
     const id = useParams().id
     const pokemon = useSelector((state) => state.detail)
 
-
+    
     useEffect(()=> {
         dispatch(getDetail(id))
     },[dispatch, id])
 
-    
 
     if(pokemon.name) {
         return (
@@ -27,30 +26,26 @@ export default function Detail(props){
                 <div className={styles.card}>
                 <div className={styles.title}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</div>
                 <div>
-                    <img className={styles.image} src={pokemon.image} alt={pokemon.name} />
+                    <img className={styles.image} src={pokemon.sprites.front_default} alt={pokemon.name} />
                 </div>
                 <div>#{pokemon.id}</div>
-                 <div>
-                    <div className={styles.types}>Type 1: {(!pokemon.createdInDb)  ? pokemon.types[0] : pokemon.types[0].name}</div>
-                    <div className={styles.types}>Type 2: {(!pokemon.createdInDb)  ? pokemon.types[1] : ((pokemon.types[1] ? pokemon.types[1].name : " "))}</div> 
-                    
-                </div>
+                 
                 <div>
                     <div className={styles.stats}>
                         <div>HP</div>
-                        <div>{pokemon.hp}</div>
+                        <div>{pokemon.stats[0].base_stat}</div>
                     </div>
                     <div className={styles.stats}>
                         <div>Attack</div>
-                        <div>{pokemon.attack}</div>
+                        <div>{pokemon.stats[0].base_stat}</div>
                     </div>
                     <div className={styles.stats}>
                         <div>Defense</div>
-                        <div>{pokemon.defense}</div>
+                        <div>{pokemon.stats[2].base_stat}</div>
                     </div>
                     <div className={styles.stats}>
                         <div>Speed</div>
-                        <div>{pokemon.speed}</div>
+                        <div>{pokemon.stats[5].base_stat}</div>
                     </div>
                     <div className={styles.stats}>
                         <div>Weight</div>
